@@ -1,5 +1,7 @@
 language: python
 
+install: true
+
 script:
   - python3 test.py
 
