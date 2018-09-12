@@ -8,9 +8,7 @@ install:
 
 script:
   - python test.py
-  - tox
-  - coverage run pytest
-  - coverage report -m
+  - py.test --doctest-modules --pep8 coveralls -v --cov coveralls --cov-report term-missing
 
 after_success:
   - coveralls
