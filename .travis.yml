@@ -1,7 +1,8 @@
 language: python
 
-install: true
+python:
+  - "3.5"
 
 script:
-  - python3 test.py
+  - python test.py
 
